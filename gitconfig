@@ -1,0 +1,24 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Chandra Koduru
+	email = chandrakoduru@outlook.com
+[color]
+	ui = auto
+[core]
+	pager = less -FMRiX
+[push]
+	default = simple
+[alias]
+	dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
+    co = checkout
+	st = status
+	unstage = reset HEAD --
+	last = log -1 HEAD
+    pc = diff HEAD^..HEAD
+
+[amazon]
+	append-cr-url = true
+	pull-request-by-default = true
+[branch]
+	autosetuprebase = always
+
